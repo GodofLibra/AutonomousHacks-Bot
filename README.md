@@ -34,7 +34,7 @@ A robust, modular, and feature-rich Discord bot designed for hackathon managemen
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/autonomoushacks-bot.git
+git clone https://github.com/GodofLibra/AutonomousHacks-Bot.git
 cd autonomoushacks-bot
 ```
 
