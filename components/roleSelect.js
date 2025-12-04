@@ -19,7 +19,7 @@ module.exports = {
     customId: 'role_select',
     async execute(interaction) {
         const selectedRole = interaction.values[0];
-        const roleName = selectedRole === 'participant' ? 'Participant' : 'Mentor';
+        const roleName = 'Participant';
 
         try {
             const role = interaction.guild.roles.cache.find(r => r.name === roleName);

@@ -237,5 +237,23 @@ This document tracks the complete history of implementation plans for the Autono
     -   Added **Tech Stack** section under Architecture Overview.
 
 ### Verification
--   [x] Verify `Readme.md` contains Tech Stack.
 -   [x] Verify `Project logging/guide.md` contains Tech Stack.
+
+---
+
+## Phase 13: Deployment & Role Refinement
+**Goal**: Prepare the bot for deployment on Vercel and refine the role selection process by removing the Mentor role.
+
+### Implemented Changes
+-   **Deployment**:
+    -   Created `vercel.json` for Vercel deployment configuration.
+-   **Role Selection**:
+    -   Removed "Mentor" option from `/setuproles` command (`commands/setupRoles.js`).
+    -   Updated role selection handler (`components/roleSelect.js`) to only support "Participant" role.
+-   **Documentation**:
+    -   Updated `guide.md` to remove "Mentor" from server roles.
+
+### Verification
+-   [x] Verify `vercel.json` is present.
+-   [x] Verify `/setuproles` only shows "Participant".
+-   [x] Verify `guide.md` reflects role changes.

@@ -19,10 +19,6 @@ module.exports = {
                     .setLabel('Participant')
                     .setDescription('Join as a participant')
                     .setValue('participant'),
-                new StringSelectMenuOptionBuilder()
-                    .setLabel('Mentor')
-                    .setDescription('Join as a mentor')
-                    .setValue('mentor'),
             );
 
         const row = new ActionRowBuilder()

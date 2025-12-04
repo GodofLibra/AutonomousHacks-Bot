@@ -46,8 +46,8 @@ LOG_CHANNEL_ID=your_logging_channel_id
 -   **OAuth2**: Ensure the bot is invited with `bot` and `applications.commands` scopes.
 
 ### 3. Server Roles
--   Create roles named **Participant** and **Mentor**.
--   Ensure the bot's role is **higher** than these roles in the hierarchy.
+-   Create role named **Participant**.
+-   Ensure the bot's role is **higher** than this role in the hierarchy.
 
 ## Developer Workflows
 
