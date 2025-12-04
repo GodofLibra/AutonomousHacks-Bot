@@ -23,6 +23,11 @@ A robust, modular, and feature-rich Discord bot designed for hackathon managemen
 -   **Modular Design**: Clean separation of Commands, Events, Utilities, and Components.
 -   **Test Suite**: Built-in standalone test runner (`testcases.js`) using mock objects.
 
+### 💻 Tech Stack
+-   **Runtime**: Node.js
+-   **Framework**: discord.js (v14)
+-   **Configuration**: dotenv
+
 ---
 
 ## 🚀 Installation & Setup
@@ -117,6 +122,10 @@ node testcases.js
 ├── Readme.md           # Project documentation
 └── .env                # Configuration secrets
 ```
+
+## Authors
+
+- [@Harshil Shah](https://github.com/GodofLibra)
 
 ## 📚 Additional Documentation
 

@@ -211,10 +211,10 @@ This document tracks the complete history of implementation plans for the Autono
     -   Log the specific action (Muted for 5m) to the audit channel.
 
 ### Verification Plan
--   [ ] Send a message with a banned word.
--   [ ] Verify user is timed out for 5 minutes.
--   [ ] Verify bot sends a "muted" warning.
--   [ ] Verify logs reflect the mute action.
+-   [x] Send a message with a banned word.
+-   [x] Verify user is timed out for 5 minutes.
+-   [x] Verify bot sends a "muted" warning.
+-   [x] Verify logs reflect the mute action.
 
 ### Test Case Updates
 #### [MODIFY] [testcases.js](file:///c:/Users/Administrator/Documents/AutonomousHacks%20Bot/testcases.js)
@@ -224,3 +224,18 @@ This document tracks the complete history of implementation plans for the Autono
 - Update `Event: messageCreate (Banned Word)` test:
     - Verify `member.timeout` was called with correct duration (300000ms).
     - Verify warning message includes "muted".
+
+---
+
+## Phase 12: Documentation & Tech Stack
+**Goal**: Update project documentation to explicitly list the technology stack for better developer onboarding.
+
+### Implemented Changes
+-   **Readme Update**: `Readme.md`
+    -   Added **Tech Stack** section (Node.js, discord.js v14, dotenv).
+-   **Guide Update**: `Project logging/guide.md`
+    -   Added **Tech Stack** section under Architecture Overview.
+
+### Verification
+-   [x] Verify `Readme.md` contains Tech Stack.
+-   [x] Verify `Project logging/guide.md` contains Tech Stack.

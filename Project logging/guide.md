@@ -26,6 +26,11 @@ The bot uses a modular architecture to separate concerns and improve scalability
     -   `moderation.js`: Content filtering and spam detection logic.
     -   `db.js`: Database connection placeholder.
 
+### Tech Stack
+-   **Runtime**: Node.js
+-   **Framework**: discord.js (v14)
+-   **Configuration**: dotenv
+
 ## Configuration & Setup
 
 ### 1. Environment Variables (`.env`)
