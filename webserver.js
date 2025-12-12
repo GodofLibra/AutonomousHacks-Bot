@@ -1,11 +1,28 @@
-const express = require('express')
-const app = express()
-const port = process.env.PORT || 4000
+// index.js
+// Minimal Express web service for Render
 
-// app.get('/', (req, res) => {
-//     res.send('Hello World!')
-// })
+const express = require("express");
+const app = express();
 
-app.listen(port, () => {
-    console.log(`Discord bot app listening on port ${port}`)
-})
+app.use(express.json());
+
+// Basic health route
+app.get("/", (req, res) => {
+  res.json({
+    ok: true,
+    service: "render-webservice",
+    uptime_seconds: Math.floor(process.uptime()),
+    timestamp: new Date().toISOString()
+  });
+});
+
+// Render health check endpoint (if you want to use it)
+app.get("/health", (req, res) => {
+  res.sendStatus(200);
+});
+
+// Port provided by Render (local fallback to 3000)
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Web service running on port ${PORT}`);
+});
