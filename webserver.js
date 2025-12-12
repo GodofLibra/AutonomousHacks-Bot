@@ -22,7 +22,12 @@ app.get("/health", (req, res) => {
 });
 
 // Port provided by Render (local fallback to 3000)
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
+//const PORT = process.env.PORT || 3000;
+const PORT = 10000;
+//const HOST = process.env.HOST || "0.0.0.0"; 
+const HOST = "0.0.0.0";   // IMPORTANT for Render
+
+
+app.listen(PORT, HOST, () => {
   console.log(`Web service running on port ${PORT}`);
 });
