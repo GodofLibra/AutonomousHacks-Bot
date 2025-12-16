@@ -18,8 +18,7 @@ const logger = require('../utils/logger');
 module.exports = {
     customId: 'role_select',
     async execute(interaction) {
-        const selectedRole = interaction.values[0];
-        const roleName = 'Participant';
+        const roleName = interaction.values[0];
 
         try {
             const role = interaction.guild.roles.cache.find(r => r.name === roleName);

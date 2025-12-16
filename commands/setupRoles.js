@@ -18,7 +18,19 @@ module.exports = {
                 new StringSelectMenuOptionBuilder()
                     .setLabel('Participant')
                     .setDescription('Join as a participant')
-                    .setValue('participant'),
+                    .setValue('Participant'),
+                new StringSelectMenuOptionBuilder()
+                    .setLabel('Volunteers')
+                    .setDescription('Join as a volunteer')
+                    .setValue('Volunteers'),
+                new StringSelectMenuOptionBuilder()
+                    .setLabel('Team Lead')
+                    .setDescription('Join as a team lead')
+                    .setValue('Team Lead'),
+                new StringSelectMenuOptionBuilder()
+                    .setLabel('Mentor')
+                    .setDescription('Join as a mentor')
+                    .setValue('Mentor'),
             );
 
         const row = new ActionRowBuilder()
